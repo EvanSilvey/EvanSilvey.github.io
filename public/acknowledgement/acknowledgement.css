@@ -1,0 +1,59 @@
+/* Font being used */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* mobile view */
+.button {
+  margin-top: 60px;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  align-items: flex-start; 
+  align-content: center; 
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Boogaloo', cursive;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 36px;
+}
+
+.msg {
+  text-align: center;
+  max-width: 400px;
+  margin-top: 100px;
+}
+
+#vidname {
+  color: #EE1D52;
+}
+
+/* tablet view */
+@media (min-width: 480px) {
+  .success {
+    font-size: 40px;
+  }
+}
+
+/* desktop view  */
+@media screen and (min-width: 900px){
+   .Header {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .success {
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+  }
+}
