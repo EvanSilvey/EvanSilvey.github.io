@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+/*   justify-content: center;
+  align-items: center; */
+
+  /* put the colors in CSS variables */
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+}
+header {
+  font-family: 'Boogaloo', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: normal;
+
+  margin-bottom: 28px;
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+button {
+  background-color: white;
+}
+#continue {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--ttmagenta);
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 130px;
+  height: 53px; 
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+div.video {
+  width: 325px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--ttmagenta);
+  z-index: 2;
+}
+div.undervid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.reloadb {
+  transform: rotate(45deg);
+  text-align: center;
+  margin-left: -10px;
+}
+#reload {
+  color: rgba(238, 29, 82, 0.8);
+  font-size: 40px;
+  transform: scale(-1, 1);
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.name {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  div.video {
+    margin-bottom: 10px;
+  }
+  .name {
+    font-size: 24px;
+  }
+  .reloadb {
+    margin-right: 20px;
+  }
+  #reload {
+    font-size: 64px;
+    margin-bottom: 50px;
+  }
+  #continue {
+    font-size: 20px;
+    width: 180px;
+    height: 60px; 
+    border-radius: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    font-size: 48px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  div.video {
+    margin-bottom: 60px;
+  }
+  div.undervid {
+    max-width: 1600px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .name {
+    font-size: 24px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+  .reloadb {
+    position: fixed;
+  }
+  #reload {
+    font-size: 76px;
+  }
+  #continue {
+    margin: 10px;
+    margin-left: 83%;
+    margin-right: auto;
+  }
+}
